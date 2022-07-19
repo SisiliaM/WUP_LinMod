@@ -60,6 +60,15 @@ When we fit the equation of the line that fits the data is SIMS = -4.095(the int
 
 #### Predict at target point
 
+```{r}
+pdata <- data.frame(ARM = 88, GRIP = 94)
+```
+
+```{r}
+predict(model.1, pdata)
+```
+
+The prediction for when ARMS is equal 88 is 0.7063836.
 
 #### scatterplot with model fit
   
