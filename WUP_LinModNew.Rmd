@@ -51,6 +51,13 @@ Looking at the numerical results the independent variable is ARM and the depende
 
 ### Inferential  (Build model.1)
 
+```{r}
+model.1 <- lm(SIMS~ARM,data=data)
+summary.lm(model.1)
+```
+
+When we fit the equation of the line that fits the data is SIMS = -4.095(the intercept) + .0545 * ARM.
+
 #### Predict at target point
 
 
