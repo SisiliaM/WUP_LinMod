@@ -35,6 +35,12 @@ data <- read.csv(file="https://onlinestatbook.com/case_studies_rvls/physical_str
 
 ### scatterplot
 
+```{r}
+plot(SIMS~ARM,data=data)
+```
+
+Looking at the scatter plot you can infer that as the ARM increases, SIMS increase as well.
+
 ### Numerical results
 
 
