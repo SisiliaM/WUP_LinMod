@@ -47,7 +47,7 @@ Looking at the scatter plot you can infer that as the ARM increases, SIMS increa
 cor(SIMS~ARM,data=data)
 ```
 
-Looking at the numerical results the independent variable is ARM and the dependent variable is SIMS. As SIMS gets bigger ARM gets big as well, which gives us a positive linear correlation.
+Looking at the numerical results the independent variable is ARM and the dependent variable is SIMS. Which makes this a positive correlation because the number given in the numerical result was positive. 
 
 ### Inferential  (Build model.1)
 
