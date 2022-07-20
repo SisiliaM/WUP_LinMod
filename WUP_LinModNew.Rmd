@@ -89,10 +89,15 @@ basicNN <- ggplot(data,aes(y=SIMS,x=GRIP))
 basicNN + geom_point()
 ```
 
-This scatterplot shows a positive correlation between SIMS and GRIP.
+This scatter plot shows a positive correlation between SIMS and GRIP.
 
 ### Numerical results 
 
+```{r}
+cor(SIMS~GRIP,data=data)
+```
+
+This allows us to see that there is a positive correlation between SIMS and GRIP. However the correlation between SIMS and ARM had a higher number which shows us that they are more closely correlated than SIMS and GRIP.
 
 ### Inferential  (Build model.2)
   
