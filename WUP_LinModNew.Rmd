@@ -73,9 +73,7 @@ The prediction for when ARMS is equal 88 is 0.7063836.
 #### scatterplot with model fit
   
 ```{r}
-basicNN <- ggplot(data,aes(y=SIMS,x=ARM))
-basicNN + geom_point()
-basicNN + geom_point() + geom_smooth(method=lm)
+basicNN + geom_point() + geom_lm()
 ```
 
 ## Model 2 SIM~GRIP
