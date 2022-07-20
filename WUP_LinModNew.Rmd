@@ -61,11 +61,8 @@ When we fit the equation of the line that fits the data is SIMS = -4.095(the int
 #### Predict at target point
 
 ```{r}
-pdata <- data.frame(ARM = 88, GRIP = 94)
-```
-
-```{r}
-predict(model.1, pdata)
+tgp=data.frame(ARM=88, GRIP=94)
+predict.lm(model.1, tgp, interval = "prediction")
 ```
 
 The prediction for when ARMS is equal 88 is 0.7063836.
@@ -109,6 +106,10 @@ summary.lm(model.2)
 The inferential results gave a standard deviation of 1.295 and an adjusted R squared of 0.4053. Which is a higher standard deviation compared to SIMS and ARM.
 
 #### predict model.2 at target point
+
+```{r}
+predict.lm(model.2, tgp, interval = "prediction")
+```
 
 #### now add the model fit to our plot for model.2
   
