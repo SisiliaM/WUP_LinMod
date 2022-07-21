@@ -114,7 +114,7 @@ predict.lm(model.2, tgp, interval = "prediction")
 #### now add the model fit to our plot for model.2
   
 ```{r}
-basicNN_GRIP + geom_point() + geom_lm
+basicNN_GRIP + geom_point() + geom_lm()
 ```
 
 
@@ -122,7 +122,11 @@ basicNN_GRIP + geom_point() + geom_lm
 
 ### Numerical results (cor)
 
-`
+```{r}
+cor(SIMS~ARM+GRIP,data=data)
+```
+  
+The correlation when using ARM and GRIP is higher than just using ARM and GRIP by themselves. 
   
 ### Inferential  (Build 2-dimentional model.3)
 
