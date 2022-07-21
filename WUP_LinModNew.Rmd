@@ -111,6 +111,8 @@ The inferential results gave a standard deviation of 1.295 and an adjusted R squ
 predict.lm(model.2, tgp, interval = "prediction")
 ```
 
+The predictions shows that is GRIP plane, with the lower amount being -3.11 and the upper amount being 2.04.
+
 #### now add the model fit to our plot for model.2
   
 ```{r}
